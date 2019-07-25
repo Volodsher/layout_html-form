@@ -14,29 +14,29 @@
 </head>
 <body>
   <form name="student-data" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
-    <fieldset class="form-blocks">
+    <fieldset class="section">
       <legend>Personal information</legend>
       <label for="surname">Surname:</label>
-      <input class="distance-input" type="text" id="surname" name="pi"><br>
+      <input class="insert" type="text" id="surname" name="pi"><br>
       <label for="name">Name:</label>
-      <input class="distance-input" type="text" id="name" name="pi"><br>
+      <input class="insert" type="text" id="name" name="pi"><br>
       <label for="age">How old are You?</label>
-      <input class="distance-input" type="number" id="age" name="pi" value="12" min="0" max="100" data-qa="field-value"><br>
+      <input class="insert" type="number" id="age" name="pi" value="12" min="0" max="100" data-qa="field-value"><br>
       <label for="birth">Full date of birth:</label>
-      <input class="distance-input" type="date" id="birth" name="pi"><br>
+      <input class="insert" type="date" id="birth" name="pi"><br>
       <label for="term">I accept the term of the agreement</label>
       <input type="checkbox" id="term" name="pi">
     </fieldset>
-    <fieldset class="form-blocks">
+    <fieldset class="section">
       <legend>Registration</legend>
       <label for="e-mail">E-mail:</label>
-      <input class="distance-input" type="email" id="e-mail" name="pi" placeholder="email@example.com" data-qa="field-placeholder"><br>
+      <input class="insert" type="email" id="e-mail" name="pi" placeholder="email@example.com" data-qa="field-placeholder"><br>
       <label for="password">Password:</label>
       <input type="password" id="password" name="pi">
     </fieldset>
-    <fieldset class="form-blocks">
+    <fieldset class="section">
       <legend>An interesting fact about you!</legend>
-      <div class="distance-div">
+      <div class="insert">
         Do you love cats?
         <input type="radio" id="cat-yes" name="cat" value="Yes">
         <label for="cat-yes">Yes</label>
@@ -44,10 +44,10 @@
         <label for="cat-no">No</label><br>
       </div>
       <label for="fav-color">What is your favorite color?</label>
-      <input class="distance-input" type="color" id="fav-color" name="fact"><br>
+      <input class="insert" type="color" id="fav-color" name="fact"><br>
       <label for="bed-time">What time do you go to bed?</label>
-      <input class="distance-input" type="time" id="bed-time" name="fact"><br>
-      <div class="distance-div">
+      <input class="insert" type="time" id="bed-time" name="fact"><br>
+      <div class="insert">
         <label for="car">What are your favorite brand of cars?</label>
         <select id="car" name="cars" multiple>
           <option value="volvo">BMW</option>
@@ -59,19 +59,17 @@
       <label for="work-rate">How do you rate our work?</label>
       <input type="range" id="work-rate" name="pi" value="0">
     </fieldset>
-    <fieldset class="form-blocks">
+    <fieldset class="section">
       <legend>Additional info:</legend>
-      <div class="distance-div">
+      <div class="insert">
         <label for="comments">Comments:</label>
         <textarea rows="2" cols="20" id="comments" name="comments" form="student-data"></textarea>
       </div>
-      <div class="distace-div">
-        Would you recommend us?
-        <select name="recomendation">
-          <option value="yes">yes</option>
-          <option value="no">no</option>
-        </select>
-      </div>
+      Would you recommend us?
+      <select name="recomendation">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
     </fieldset>
     <input type="submit" id="submit" value="Submit">
   </form>
